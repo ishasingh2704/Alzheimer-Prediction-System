@@ -1,0 +1,19 @@
+2025-10-25 13:38:55,122 - INFO - Created directory: preprocessed_data
+2025-10-25 13:38:55,123 - INFO - Created directory: preprocessing_outputs
+2025-10-25 13:38:55,137 - INFO - Dataset loaded successfully. Shape: (2149, 35)
+2025-10-25 13:38:55,138 - INFO - Starting data cleaning...
+2025-10-25 13:38:55,138 - INFO - Original dataset shape: (2149, 35)
+2025-10-25 13:38:55,139 - INFO - Removed columns: ['PatientID', 'DoctorInCharge']
+2025-10-25 13:38:55,139 - INFO - Handling missing values...
+2025-10-25 13:38:55,140 - INFO - No missing values found
+2025-10-25 13:38:55,153 - INFO - Data cleaning completed. Final shape: (2149, 33)
+2025-10-25 13:38:55,153 - INFO - Starting feature engineering...
+2025-10-25 13:38:55,156 - INFO - Created AgeGroup feature
+2025-10-25 13:38:55,158 - INFO - Created BMICategory feature
+2025-10-25 13:38:55,173 - INFO - Created BPCategory feature
+2025-10-25 13:38:55,174 - INFO - Created CholesterolRiskScore feature
+2025-10-25 13:38:55,175 - INFO - Created CognitiveDeclineScore feature
+2025-10-25 13:38:55,177 - INFO - Created LifestyleRiskScore feature
+2025-10-25 13:38:55,178 - INFO - Created MedicalHistoryRiskScore feature
+2025-10-25 13:38:55,179 - INFO - Feature engineering completed. Created 7 new features: ['AgeGroup', 'BMICategory', 'BPCategory', 'CholesterolRiskScore', 'CognitiveDeclineScore', 'LifestyleRiskScore', 'MedicalHistoryRiskScore']
+2025-10-25 13:38:55,179 - INFO - Starting feature encoding...

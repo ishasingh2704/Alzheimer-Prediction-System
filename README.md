@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Alzheimer's Detection System
+
+A Next.js 14 project for Alzheimer's disease detection using deep learning and a Python Flask backend.
+
+## Project Structure
+
+- `/app` — Next.js app directory for pages and routing
+- `/components` — Reusable React components (UI, uploaders, etc.)
+- `/api/python` — Python Flask backend for ML inference
+- `/models` — Machine learning model files and documentation
+- `/utils` — Helper functions (image processing, API calls)
+- `/lib` — Database connection helpers
 
 ## Getting Started
 
-First, run the development server:
+### Frontend (Next.js)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Install dependencies:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   ```powershell
+   npm install
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. Run the development server:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   ```powershell
+   npm run dev
+   ```
 
-## Learn More
+### Backend (Flask)
 
-To learn more about Next.js, take a look at the following resources:
+1. Install Python dependencies:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```powershell
+   cd api/python
+   pip install -r requirements.txt
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. Start the Flask server:
 
-## Deploy on Vercel
+   ```powershell
+   python app.py
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Model Files
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Place your trained model files in the `/models` directory. See `/models/README.md` for details.
+
+## Notes
+
+- The Flask backend runs on port 5000 by default.
+- Update CORS and API URLs as needed for deployment.
+- This is a starter structure—extend as needed for your use case.
