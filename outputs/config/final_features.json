@@ -1,0 +1,16 @@
+[
+    "Age",
+    "BMI",
+    "SleepQuality",
+    "SystolicBP",
+    "DiastolicBP",
+    "CholesterolTotal",
+    "CholesterolHDL",
+    "CholesterolTriglycerides",
+    "FunctionalAssessment",
+    "MemoryComplaints",
+    "BehavioralProblems",
+    "ADL",
+    "CognitiveDeclineScore",
+    "TotalSymptomCount"
+]
