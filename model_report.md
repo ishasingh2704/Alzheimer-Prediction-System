@@ -20,6 +20,7 @@ This document summarizes how the two production-ready models were created, what 
   - Categorical encoding: label encoding for binary categories, one-hot encoding for multi-class where appropriate.
   - Feature engineering: derived features such as AgeGroup, BMI category, cholesterol risk score, and a simple symptom-count feature (implementation details in `notebooks/02_data_preprocessing.ipynb`).
   - Scaling: numerical features scaled with StandardScaler inside model pipelines (SVM) or kept as-is for Random Forest.
+## 10 — Implementation details (code-level explanation)
 
 - Preprocessed artifacts (pickles):
   - `outputs/preprocessed/X_train.pkl` (1504 rows × ~43 features)
@@ -174,5 +175,6 @@ Notes on thresholds: by default, probability >= 0.5 => label 1. For operational 
   - Create a short HTML/PDF report combining `*_summary.txt` and the key plots for stakeholder distribution. I can produce this automatically.
 
 ---
+
 
 If you want, I can now generate a single HTML report (printer-friendly) that bundles both plain-language summaries, the confusion matrices, ROC curves and top-20 feature plots — would you like me to create that? If yes, tell me whether you prefer PDF or HTML.
