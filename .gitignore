@@ -39,3 +39,45 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Machine Learning Models and Data
+/models/*.pkl
+/models/*.joblib
+/models/*.h5
+/models/*.pt
+/models/*.pth
+/data/*.csv
+/data/*.json
+/data/*.xlsx
+/data/*.parquet
+
+# Analysis Outputs
+/outputs/*
+/analysis_outputs/*
+/preprocessing_outputs/*
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Logs
+*.log
+preprocessing_log_*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
