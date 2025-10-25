@@ -1,0 +1,20 @@
+Model: SVM (full)
+
+Overall accuracy: 0.863 — the percentage of total cases the model predicted correctly.
+Sensitivity (recall): 0.880 — how well the model detects positive cases (true positives).
+Precision: 0.851 — how often a positive prediction is correct.
+ROC AUC: 0.928 — overall ability to separate positive and negative cases.
+
+Top features influencing predictions:
+ - FunctionalAssessment: importance 0.162 (higher = more influence)
+ - ADL: importance 0.147 (higher = more influence)
+ - CognitiveDeclineScore: importance 0.102 (higher = more influence)
+ - MemoryComplaints: importance 0.058 (higher = more influence)
+ - BehavioralProblems: importance 0.042 (higher = more influence)
+ - TotalSymptomCount: importance 0.024 (higher = more influence)
+ - CholesterolHDL: importance 0.018 (higher = more influence)
+ - CholesterolTotal: importance 0.018 (higher = more influence)
+ - CholesterolTriglycerides: importance 0.016 (higher = more influence)
+ - SystolicBP: importance 0.015 (higher = more influence)
+
+Interpretation guide: High sensitivity means fewer missed positive cases. High precision means fewer false positives.

@@ -1,0 +1,211 @@
+[
+  {
+    "RandomForest_reduced_grid": {
+      "best_params": {
+        "max_depth": null,
+        "max_features": "sqrt",
+        "min_samples_split": 2,
+        "n_estimators": 200
+      },
+      "best_cv_score": 0.9202148394241417,
+      "validation_metrics": {
+        "accuracy": 0.937888198757764,
+        "precision": 0.97,
+        "recall": 0.8508771929824561,
+        "f1": 0.9065420560747663,
+        "roc_auc": 0.9370571862348178,
+        "classification_report": {
+          "0": {
+            "precision": 0.9234234234234234,
+            "recall": 0.9855769230769231,
+            "f1-score": 0.9534883720930233,
+            "support": 208.0
+          },
+          "1": {
+            "precision": 0.97,
+            "recall": 0.8508771929824561,
+            "f1-score": 0.9065420560747663,
+            "support": 114.0
+          },
+          "accuracy": 0.937888198757764,
+          "macro avg": {
+            "precision": 0.9467117117117116,
+            "recall": 0.9182270580296896,
+            "f1-score": 0.9300152140838949,
+            "support": 322.0
+          },
+          "weighted avg": {
+            "precision": 0.9399132673045717,
+            "recall": 0.937888198757764,
+            "f1-score": 0.9368676266704106,
+            "support": 322.0
+          }
+        },
+        "confusion_matrix_path": "C:\\Users\\Sana\\Alzheimer-Prediction-System\\outputs\\models\\confusion_matrix_validation.png",
+        "roc_curve_path": "C:\\Users\\Sana\\Alzheimer-Prediction-System\\outputs\\models\\roc_curve_validation.png"
+      },
+      "test_metrics": {
+        "accuracy": 0.9411764705882353,
+        "precision": 0.9130434782608695,
+        "recall": 0.9210526315789473,
+        "f1": 0.9170305676855895,
+        "roc_auc": 0.9504532863258625,
+        "classification_report": {
+          "0": {
+            "precision": 0.9567307692307693,
+            "recall": 0.9521531100478469,
+            "f1-score": 0.9544364508393285,
+            "support": 209.0
+          },
+          "1": {
+            "precision": 0.9130434782608695,
+            "recall": 0.9210526315789473,
+            "f1-score": 0.9170305676855895,
+            "support": 114.0
+          },
+          "accuracy": 0.9411764705882353,
+          "macro avg": {
+            "precision": 0.9348871237458194,
+            "recall": 0.9366028708133971,
+            "f1-score": 0.935733509262459,
+            "support": 323.0
+          },
+          "weighted avg": {
+            "precision": 0.94131172535904,
+            "recall": 0.9411764705882353,
+            "f1-score": 0.9412343744321265,
+            "support": 323.0
+          }
+        },
+        "confusion_matrix_path": "C:\\Users\\Sana\\Alzheimer-Prediction-System\\outputs\\models\\confusion_matrix_test.png",
+        "roc_curve_path": "C:\\Users\\Sana\\Alzheimer-Prediction-System\\outputs\\models\\roc_curve_test.png"
+      },
+      "oob_score": 0.9222074468085106,
+      "saved_model_path": "C:\\Users\\Sana\\Alzheimer-Prediction-System\\models\\random_forest_best_reduced.pkl",
+      "feature_importance_plot": "C:\\Users\\Sana\\Alzheimer-Prediction-System\\outputs\\models\\feature_importances_top20.png",
+      "timestamp": "2025-10-25 18:23:11"
+    },
+    "SVM_reduced_grid": {
+      "best_params": {
+        "C": 1,
+        "gamma": "scale",
+        "kernel": "linear"
+      },
+      "best_cv_score": 0.8324584717607972,
+      "validation_metrics": {
+        "accuracy": 0.8540372670807453,
+        "precision": 0.819047619047619,
+        "recall": 0.7543859649122807,
+        "f1": 0.7853881278538812,
+        "roc_auc": 0.8847629892037785,
+        "classification_report": {
+          "0": {
+            "precision": 0.8709677419354839,
+            "recall": 0.9086538461538461,
+            "f1-score": 0.8894117647058823,
+            "support": 208.0
+          },
+          "1": {
+            "precision": 0.819047619047619,
+            "recall": 0.7543859649122807,
+            "f1-score": 0.7853881278538812,
+            "support": 114.0
+          },
+          "accuracy": 0.8540372670807453,
+          "macro avg": {
+            "precision": 0.8450076804915514,
+            "recall": 0.8315199055330634,
+            "f1-score": 0.8373999462798818,
+            "support": 322.0
+          },
+          "weighted avg": {
+            "precision": 0.8525860835217678,
+            "recall": 0.8540372670807453,
+            "f1-score": 0.852583520603,
+            "support": 322.0
+          }
+        },
+        "confusion_matrix_path": "C:\\Users\\Sana\\Alzheimer-Prediction-System\\outputs\\models\\confusion_matrix_svm_validation.png",
+        "roc_curve_path": "C:\\Users\\Sana\\Alzheimer-Prediction-System\\outputs\\models\\roc_curve_svm_validation.png"
+      },
+      "test_metrics": {
+        "accuracy": 0.8390092879256966,
+        "precision": 0.7583333333333333,
+        "recall": 0.7982456140350878,
+        "f1": 0.7777777777777778,
+        "roc_auc": 0.9032989171493326,
+        "classification_report": {
+          "0": {
+            "precision": 0.8866995073891626,
+            "recall": 0.861244019138756,
+            "f1-score": 0.8737864077669902,
+            "support": 209.0
+          },
+          "1": {
+            "precision": 0.7583333333333333,
+            "recall": 0.7982456140350878,
+            "f1-score": 0.7777777777777778,
+            "support": 114.0
+          },
+          "accuracy": 0.8390092879256966,
+          "macro avg": {
+            "precision": 0.822516420361248,
+            "recall": 0.8297448165869219,
+            "f1-score": 0.825782092772384,
+            "support": 323.0
+          },
+          "weighted avg": {
+            "precision": 0.8413937988988699,
+            "recall": 0.8390092879256966,
+            "f1-score": 0.8399010089472682,
+            "support": 323.0
+          }
+        },
+        "confusion_matrix_path": "C:\\Users\\Sana\\Alzheimer-Prediction-System\\outputs\\models\\confusion_matrix_svm_test.png",
+        "roc_curve_path": "C:\\Users\\Sana\\Alzheimer-Prediction-System\\outputs\\models\\roc_curve_svm_test.png"
+      },
+      "saved_model_path": "C:\\Users\\Sana\\Alzheimer-Prediction-System\\models\\svm_best_reduced.pkl",
+      "timestamp": "2025-10-25 18:51:01"
+    }
+  },
+  {
+    "model": "svm",
+    "params": {},
+    "validation": null,
+    "test": {
+      "accuracy": 0.863,
+      "precision": 0.851,
+      "recall": 0.88,
+      "roc_auc": 0.928
+    },
+    "model_path": "models\\svm_best_full.pkl",
+    "feature_importance_plot": "outputs\\models\\feature_importances_svm_top20.png"
+  },
+  {
+    "model": "random_forest",
+    "params": {
+      "bootstrap": true,
+      "max_depth": 20,
+      "max_features": "sqrt",
+      "min_samples_leaf": 1,
+      "min_samples_split": 2,
+      "n_estimators": 500
+    },
+    "validation": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "roc_auc": 1.0
+    },
+    "test": {
+      "accuracy": 0.9184652278177458,
+      "precision": 0.9438775510204082,
+      "recall": 0.8894230769230769,
+      "f1": 0.9158415841584159,
+      "roc_auc": 0.9597902097902099
+    },
+    "model_path": "models\\random_forest_best_full.pkl",
+    "feature_importance_plot": "outputs\\models\\feature_importances_rf_top20.png"
+  }
+]
