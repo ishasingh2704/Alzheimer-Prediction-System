@@ -1,0 +1,59 @@
+{
+    "preprocessing_steps": [
+        "missing_value_imputation",
+        "outlier_handling",
+        "feature_encoding",
+        "feature_engineering",
+        "feature_scaling",
+        "class_imbalance_handling",
+        "feature_selection",
+        "data_splitting"
+    ],
+    "encoders": {
+        "label_encoders": [
+            "Gender",
+            "Smoking",
+            "FamilyHistoryAlzheimers",
+            "CardiovascularDisease",
+            "Diabetes",
+            "Depression",
+            "HeadInjury",
+            "Hypertension",
+            "MemoryComplaints",
+            "BehavioralProblems",
+            "Confusion",
+            "Disorientation",
+            "PersonalityChanges",
+            "DifficultyCompletingTasks",
+            "Forgetfulness",
+            "Diagnosis"
+        ],
+        "standard_scaler": "../outputs/models/standard_scaler.pkl",
+        "minmax_scaler": "../outputs/models/minmax_scaler.pkl"
+    },
+    "data_splits": {
+        "train_size": 1944,
+        "val_size": 417,
+        "test_size": 417
+    },
+    "final_features": [
+        "Age",
+        "BMI",
+        "SleepQuality",
+        "SystolicBP",
+        "DiastolicBP",
+        "CholesterolTotal",
+        "CholesterolHDL",
+        "CholesterolTriglycerides",
+        "FunctionalAssessment",
+        "MemoryComplaints",
+        "BehavioralProblems",
+        "ADL",
+        "CognitiveDeclineScore",
+        "TotalSymptomCount"
+    ],
+    "target_classes": [
+        "0",
+        "1"
+    ]
+}

@@ -1,0 +1,619 @@
+{
+    "initial_state": {
+        "total_rows": 2149,
+        "total_columns": 35,
+        "data_types": {
+            "int64": 22,
+            "float64": 12,
+            "object": 1
+        },
+        "missing_values": "0",
+        "memory_usage_mb": 0.5739707946777344,
+        "timestamp": "2025-10-25 14:43:36"
+    },
+    "id_columns": {
+        "patient_id_removed": true,
+        "doctor_in_charge_removed": true,
+        "doctor_diagnosis_correlation": {
+            "chi2_statistic": 0.0,
+            "p_value": 1.0
+        }
+    },
+    "missing_values": {
+        "imputation_strategies": {},
+        "missing_counts": {
+            "before": {
+                "Age": 0,
+                "Gender": 0,
+                "Ethnicity": 0,
+                "EducationLevel": 0,
+                "BMI": 0,
+                "Smoking": 0,
+                "AlcoholConsumption": 0,
+                "PhysicalActivity": 0,
+                "DietQuality": 0,
+                "SleepQuality": 0,
+                "FamilyHistoryAlzheimers": 0,
+                "CardiovascularDisease": 0,
+                "Diabetes": 0,
+                "Depression": 0,
+                "HeadInjury": 0,
+                "Hypertension": 0,
+                "SystolicBP": 0,
+                "DiastolicBP": 0,
+                "CholesterolTotal": 0,
+                "CholesterolLDL": 0,
+                "CholesterolHDL": 0,
+                "CholesterolTriglycerides": 0,
+                "MMSE": 0,
+                "FunctionalAssessment": 0,
+                "MemoryComplaints": 0,
+                "BehavioralProblems": 0,
+                "ADL": 0,
+                "Confusion": 0,
+                "Disorientation": 0,
+                "PersonalityChanges": 0,
+                "DifficultyCompletingTasks": 0,
+                "Forgetfulness": 0,
+                "Diagnosis": 0
+            },
+            "after": {}
+        }
+    },
+    "outlier_handling": {
+        "method": "IQR",
+        "features_handled": [
+            "SystolicBP",
+            "DiastolicBP",
+            "CholesterolTotal",
+            "CholesterolLDL",
+            "CholesterolHDL",
+            "CholesterolTriglycerides",
+            "BMI"
+        ],
+        "outlier_statistics": {
+            "SystolicBP": {
+                "column": "SystolicBP",
+                "total_outliers": 0,
+                "lower_outliers": 0,
+                "upper_outliers": 0,
+                "lower_bound": 44.5,
+                "upper_bound": 224.5,
+                "Q1": 112.0,
+                "Q3": 157.0,
+                "IQR": 45.0
+            },
+            "DiastolicBP": {
+                "column": "DiastolicBP",
+                "total_outliers": 0,
+                "lower_outliers": 0,
+                "upper_outliers": 0,
+                "lower_bound": 27.5,
+                "upper_bound": 151.5,
+                "Q1": 74.0,
+                "Q3": 105.0,
+                "IQR": 31.0
+            },
+            "CholesterolTotal": {
+                "column": "CholesterolTotal",
+                "total_outliers": 0,
+                "lower_outliers": 0,
+                "upper_outliers": 0,
+                "lower_bound": 82.58492292283462,
+                "upper_bound": 369.69969684874764,
+                "Q1": 190.252963145052,
+                "Q3": 262.03165662653026,
+                "IQR": 71.77869348147826
+            },
+            "CholesterolLDL": {
+                "column": "CholesterolLDL",
+                "total_outliers": 0,
+                "lower_outliers": 0,
+                "upper_outliers": 0,
+                "lower_bound": -24.611103907195158,
+                "upper_bound": 273.5406345586411,
+                "Q1": 87.19579801749344,
+                "Q3": 161.7337326339525,
+                "IQR": 74.53793461645907
+            },
+            "CholesterolHDL": {
+                "column": "CholesterolHDL",
+                "total_outliers": 0,
+                "lower_outliers": 0,
+                "upper_outliers": 0,
+                "lower_bound": -20.66932821178719,
+                "upper_bound": 138.704076342026,
+                "Q1": 39.09569849589276,
+                "Q3": 78.93904963434606,
+                "IQR": 39.8433511384533
+            },
+            "CholesterolTriglycerides": {
+                "column": "CholesterolTriglycerides",
+                "total_outliers": 0,
+                "lower_outliers": 0,
+                "upper_outliers": 0,
+                "lower_bound": -128.30051318721405,
+                "upper_bound": 580.7227818050029,
+                "Q1": 137.5832224348673,
+                "Q3": 314.83904618292155,
+                "IQR": 177.25582374805424
+            },
+            "BMI": {
+                "column": "BMI",
+                "total_outliers": 0,
+                "lower_outliers": 0,
+                "upper_outliers": 0,
+                "lower_bound": 3.223853202798761,
+                "upper_bound": 52.257332438089264,
+                "Q1": 21.6114079160327,
+                "Q3": 33.869777724855325,
+                "IQR": 12.258369808822625
+            }
+        }
+    },
+    "feature_encoding": {
+        "binary_features": {
+            "Gender": {
+                "original_values": [
+                    "0",
+                    "1"
+                ],
+                "encoded_values": [
+                    0,
+                    1
+                ]
+            },
+            "Smoking": {
+                "original_values": [
+                    "0",
+                    "1"
+                ],
+                "encoded_values": [
+                    0,
+                    1
+                ]
+            },
+            "FamilyHistoryAlzheimers": {
+                "original_values": [
+                    "0",
+                    "1"
+                ],
+                "encoded_values": [
+                    0,
+                    1
+                ]
+            },
+            "CardiovascularDisease": {
+                "original_values": [
+                    "0",
+                    "1"
+                ],
+                "encoded_values": [
+                    0,
+                    1
+                ]
+            },
+            "Diabetes": {
+                "original_values": [
+                    "0",
+                    "1"
+                ],
+                "encoded_values": [
+                    0,
+                    1
+                ]
+            },
+            "Depression": {
+                "original_values": [
+                    "0",
+                    "1"
+                ],
+                "encoded_values": [
+                    0,
+                    1
+                ]
+            },
+            "HeadInjury": {
+                "original_values": [
+                    "0",
+                    "1"
+                ],
+                "encoded_values": [
+                    0,
+                    1
+                ]
+            },
+            "Hypertension": {
+                "original_values": [
+                    "0",
+                    "1"
+                ],
+                "encoded_values": [
+                    0,
+                    1
+                ]
+            },
+            "MemoryComplaints": {
+                "original_values": [
+                    "0",
+                    "1"
+                ],
+                "encoded_values": [
+                    0,
+                    1
+                ]
+            },
+            "BehavioralProblems": {
+                "original_values": [
+                    "0",
+                    "1"
+                ],
+                "encoded_values": [
+                    0,
+                    1
+                ]
+            },
+            "Confusion": {
+                "original_values": [
+                    "0",
+                    "1"
+                ],
+                "encoded_values": [
+                    0,
+                    1
+                ]
+            },
+            "Disorientation": {
+                "original_values": [
+                    "0",
+                    "1"
+                ],
+                "encoded_values": [
+                    0,
+                    1
+                ]
+            },
+            "PersonalityChanges": {
+                "original_values": [
+                    "0",
+                    "1"
+                ],
+                "encoded_values": [
+                    0,
+                    1
+                ]
+            },
+            "DifficultyCompletingTasks": {
+                "original_values": [
+                    "0",
+                    "1"
+                ],
+                "encoded_values": [
+                    0,
+                    1
+                ]
+            },
+            "Forgetfulness": {
+                "original_values": [
+                    "0",
+                    "1"
+                ],
+                "encoded_values": [
+                    0,
+                    1
+                ]
+            }
+        },
+        "multiclass_features": {
+            "Ethnicity": {
+                "original_values": [
+                    "0",
+                    "3",
+                    "1",
+                    "2"
+                ],
+                "encoded_columns": [
+                    "Ethnicity_0",
+                    "Ethnicity_1",
+                    "Ethnicity_2",
+                    "Ethnicity_3"
+                ]
+            },
+            "EducationLevel": {
+                "original_values": [
+                    "2",
+                    "0",
+                    "1",
+                    "3"
+                ],
+                "encoded_columns": [
+                    "EducationLevel_0",
+                    "EducationLevel_1",
+                    "EducationLevel_2",
+                    "EducationLevel_3"
+                ]
+            }
+        },
+        "target_variable": {
+            "original_values": [
+                "0",
+                "1"
+            ],
+            "encoded_values": [
+                0,
+                1
+            ]
+        }
+    },
+    "feature_engineering": {
+        "engineered_features": {
+            "age_groups": {
+                "bins": [
+                    0,
+                    50,
+                    70,
+                    100
+                ],
+                "labels": [
+                    "Young",
+                    "Middle-aged",
+                    "Elderly"
+                ]
+            },
+            "bmi_categories": {
+                "categories": [
+                    "Underweight",
+                    "Normal",
+                    "Overweight",
+                    "Obese"
+                ]
+            },
+            "cholesterol_risk_score": {
+                "formula": "(LDL - HDL) / Total"
+            },
+            "bp_categories": {
+                "categories": [
+                    "Normal",
+                    "Elevated",
+                    "HypertensionStage1",
+                    "HypertensionStage2"
+                ]
+            },
+            "lifestyle_risk_score": {
+                "weights": {
+                    "Smoking": 2,
+                    "AlcoholConsumption": 1.5,
+                    "PhysicalActivity": -1,
+                    "DietQuality": -1
+                }
+            },
+            "cognitive_decline_score": {
+                "weights": {
+                    "MMSE": -2,
+                    "MemoryComplaints": 1,
+                    "Confusion": 1,
+                    "Forgetfulness": 1
+                }
+            },
+            "total_symptom_count": {
+                "included_symptoms": [
+                    "MemoryComplaints",
+                    "BehavioralProblems",
+                    "Confusion",
+                    "Disorientation",
+                    "PersonalityChanges",
+                    "DifficultyCompletingTasks",
+                    "Forgetfulness"
+                ]
+            }
+        },
+        "total_new_features": 7
+    },
+    "feature_scaling": {
+        "standard_scaled_features": [
+            "Age",
+            "BMI",
+            "AlcoholConsumption",
+            "PhysicalActivity",
+            "DietQuality",
+            "SleepQuality",
+            "SystolicBP",
+            "DiastolicBP",
+            "CholesterolTotal",
+            "CholesterolLDL",
+            "CholesterolHDL",
+            "CholesterolTriglycerides",
+            "CholesterolRiskScore",
+            "LifestyleRiskScore",
+            "CognitiveDeclineScore"
+        ],
+        "minmax_scaled_features": [
+            "MMSE",
+            "FunctionalAssessment",
+            "ADL",
+            "TotalSymptomCount"
+        ],
+        "unscaled_features": [
+            "Gender",
+            "Smoking",
+            "FamilyHistoryAlzheimers",
+            "CardiovascularDisease",
+            "Diabetes",
+            "Depression",
+            "HeadInjury",
+            "Hypertension",
+            "MemoryComplaints",
+            "BehavioralProblems",
+            "Confusion",
+            "Disorientation",
+            "PersonalityChanges",
+            "DifficultyCompletingTasks",
+            "Forgetfulness",
+            "Ethnicity_0",
+            "Ethnicity_1",
+            "Ethnicity_2",
+            "Ethnicity_3",
+            "EducationLevel_0",
+            "EducationLevel_1",
+            "EducationLevel_2",
+            "EducationLevel_3",
+            "AgeGroup_Young",
+            "AgeGroup_Middle-aged",
+            "AgeGroup_Elderly",
+            "BMI_Normal",
+            "BMI_Obese",
+            "BMI_Overweight",
+            "BMI_Underweight",
+            "BP_Elevated",
+            "BP_HypertensionStage1",
+            "BP_HypertensionStage2",
+            "BP_Normal"
+        ]
+    },
+    "class_imbalance": {
+        "original_distribution": {
+            "0": 1389,
+            "1": 760
+        },
+        "original_percentages": {
+            "0": 64.63471382038158,
+            "1": 35.36528617961843
+        },
+        "minority_class_percentage": 35.36528617961843,
+        "smote_applied": true,
+        "balanced_distribution": {
+            "0": 1389,
+            "1": 1389
+        },
+        "balanced_percentages": {
+            "0": 50.0,
+            "1": 50.0
+        }
+    },
+    "feature_selection": {
+        "initial_features": 53,
+        "after_importance_filtering": 21,
+        "final_features": 14,
+        "removed_low_importance": [
+            "Ethnicity_0",
+            "Forgetfulness",
+            "Confusion",
+            "PersonalityChanges",
+            "Disorientation",
+            "FamilyHistoryAlzheimers",
+            "DifficultyCompletingTasks",
+            "Diabetes",
+            "EducationLevel_0",
+            "Ethnicity_1",
+            "Gender",
+            "Smoking",
+            "EducationLevel_1",
+            "EducationLevel_2",
+            "BP_HypertensionStage1",
+            "Ethnicity_2",
+            "BMI_Normal",
+            "BMI_Obese",
+            "Depression",
+            "CardiovascularDisease",
+            "BMI_Overweight",
+            "AgeGroup_Elderly",
+            "Hypertension",
+            "BP_HypertensionStage2",
+            "BMI_Underweight",
+            "AgeGroup_Middle-aged",
+            "HeadInjury",
+            "BP_Normal",
+            "EducationLevel_3",
+            "Ethnicity_3",
+            "BP_Elevated",
+            "AgeGroup_Young"
+        ],
+        "removed_high_vif": [
+            "LifestyleRiskScore",
+            "AlcoholConsumption",
+            "CholesterolRiskScore",
+            "CholesterolLDL",
+            "DietQuality",
+            "PhysicalActivity",
+            "MMSE"
+        ],
+        "importance_threshold": 0.01,
+        "vif_threshold": 10
+    },
+    "data_splitting": {
+        "train_size": 1944,
+        "validation_size": 417,
+        "test_size": 417,
+        "train_percentage": 69.97840172786177,
+        "validation_percentage": 15.010799136069114,
+        "test_percentage": 15.010799136069114,
+        "class_distribution_by_split": {
+            "train": {
+                "counts": {
+                    "0": 972,
+                    "1": 972
+                },
+                "percentages": {
+                    "0": 50.0,
+                    "1": 50.0
+                }
+            },
+            "validation": {
+                "counts": {
+                    "0": 208,
+                    "1": 209
+                },
+                "percentages": {
+                    "0": 49.88009592326139,
+                    "1": 50.11990407673861
+                }
+            },
+            "test": {
+                "counts": {
+                    "0": 209,
+                    "1": 208
+                },
+                "percentages": {
+                    "0": 50.11990407673861,
+                    "1": 49.88009592326139
+                }
+            }
+        }
+    },
+    "saved_files": {
+        "datasets": [
+            "X_train",
+            "X_val",
+            "X_test",
+            "y_train",
+            "y_val",
+            "y_test"
+        ],
+        "encoders": [
+            "Gender",
+            "Smoking",
+            "FamilyHistoryAlzheimers",
+            "CardiovascularDisease",
+            "Diabetes",
+            "Depression",
+            "HeadInjury",
+            "Hypertension",
+            "MemoryComplaints",
+            "BehavioralProblems",
+            "Confusion",
+            "Disorientation",
+            "PersonalityChanges",
+            "DifficultyCompletingTasks",
+            "Forgetfulness",
+            "Diagnosis",
+            "standard_scaler",
+            "minmax_scaler"
+        ],
+        "configs": [
+            "preprocessing_report.json",
+            "pipeline_config.json",
+            "feature_names.json",
+            "final_features.json"
+        ]
+    }
+}
