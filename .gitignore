@@ -93,3 +93,25 @@ outputs/*
 !outputs/models/*.svg
 
 # If you prefer to keep plots out of the repo, comment out the png/svg allow-lines above.
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+
+# Data files
+data/*.csv
+!data/alzheimer_dataset.csv   # keep main dataset
+
+# Model outputs
+outputs/models/*.joblib
+outputs/models/*.pkl
+outputs/models/*.csv
+outputs/models/*.png
+outputs/models/*.json
+
+# VSCode settings
+.vscode/
