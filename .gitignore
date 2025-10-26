@@ -66,6 +66,33 @@ preprocessing_log_*.log
 *.swp
 *.swo
 
+# Machine learning artifacts - ignore large binary models and preprocessed data by default
+# Keep small human-readable outputs (reports, summaries) so they can be committed.
+# Ignore saved model binaries and common model formats
+models/
+models/*.pkl
+models/*.joblib
+models/*.h5
+models/*.onnx
+
+# Ignore preprocessed pickles / caches (reproducible from scripts/notebooks)
+outputs/preprocessed/
+outputs/preprocessed/*
+
+# Ignore outputs directory by default but allow committing the human-readable
+# model summaries and reports in outputs/models/ (we unignore specific files below).
+outputs/*
+!outputs/models/
+
+# Allow text reports, JSON comparison files, and small plots in outputs/models
+!outputs/models/model_report.md
+!outputs/models/*.md
+!outputs/models/*.txt
+!outputs/models/*.json
+!outputs/models/*.png
+!outputs/models/*.svg
+
+# If you prefer to keep plots out of the repo, comment out the png/svg allow-lines above.
 # Python cache
 __pycache__/
 *.pyc

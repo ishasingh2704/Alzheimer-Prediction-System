@@ -1,0 +1,20 @@
+Model: Random Forest (full)
+
+Overall accuracy: 0.918 — the percentage of total cases the model predicted correctly.
+Sensitivity (recall): 0.889 — how well the model detects positive cases (true positives).
+Precision: 0.944 — how often a positive prediction is correct.
+ROC AUC: 0.960 — overall ability to separate positive and negative cases.
+
+Top features influencing predictions:
+ - FunctionalAssessment: importance 0.226 (higher = more influence)
+ - ADL: importance 0.183 (higher = more influence)
+ - CognitiveDeclineScore: importance 0.159 (higher = more influence)
+ - TotalSymptomCount: importance 0.065 (higher = more influence)
+ - MemoryComplaints: importance 0.050 (higher = more influence)
+ - CholesterolTriglycerides: importance 0.039 (higher = more influence)
+ - BMI: importance 0.039 (higher = more influence)
+ - CholesterolHDL: importance 0.038 (higher = more influence)
+ - SleepQuality: importance 0.036 (higher = more influence)
+ - CholesterolTotal: importance 0.035 (higher = more influence)
+
+Interpretation guide: High sensitivity means fewer missed positive cases. High precision means fewer false positives.
