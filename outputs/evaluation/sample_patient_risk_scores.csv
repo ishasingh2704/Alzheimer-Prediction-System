@@ -1,0 +1,11 @@
+Patient_ID,Risk_Score,Risk_Level,Base_Score,Adjustments,Probability
+Patient_01,0.10000000149011612,Low Risk,0.1,0.0,0.0103
+Patient_02,9.979999542236328,High Risk,9.98,0.0,0.998
+Patient_03,3.569999933242798,Moderate Risk,3.57,0.0,0.357
+Patient_04,9.90999984741211,High Risk,9.91,0.0,0.9908
+Patient_05,9.760000228881836,High Risk,9.76,0.0,0.9761
+Patient_06,9.399999618530273,High Risk,9.4,0.0,0.9404
+Patient_07,0.07999999821186066,Low Risk,0.08,0.0,0.0076
+Patient_08,10.0,High Risk,9.94,0.5,0.9945
+Patient_09,10.0,High Risk,9.81,0.5,0.9807
+Patient_10,10.0,High Risk,9.99,0.5,0.9994
