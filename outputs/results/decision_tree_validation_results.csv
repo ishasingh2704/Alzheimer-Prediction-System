@@ -1,0 +1,2 @@
+Accuracy,Precision,Recall,F1 Score,ROC-AUC,Prediction Time (s),Training Time (s),Best Params
+0.8920863309352518,0.9505494505494505,0.8277511961722488,0.8849104859335039,0.892240982701509,0.00800776481628418,8.519731044769287,"{'criterion': 'gini', 'max_depth': 5, 'min_samples_leaf': 4, 'min_samples_split': 2}"
