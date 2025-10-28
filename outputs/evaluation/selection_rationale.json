@@ -1,7 +1,7 @@
 {
   "selected_model": "XGBoost",
   "selection_date": "2025-10-28",
-  "weighted_score": 0.8819147729929493,
+  "weighted_score": 0.8761952152953976,
   "performance_metrics": {
     "roc_auc": 0.9527741994847257,
     "f1_score": 0.9117647058823529,
@@ -10,7 +10,7 @@
     "recall": 0.8942307692307693,
     "cv_mean": 0.9664631245043616,
     "cv_std": 0.005576716924194534,
-    "prediction_time_ms": 21.648883819580078
+    "prediction_time_ms": 25.98285675048828
   },
   "selection_criteria": {
     "roc_auc": 0.4,
@@ -20,11 +20,11 @@
     "precision": 0.1
   },
   "model_comparison": {
-    "Decision Tree": 0.8283310265716595,
-    "XGBoost": 0.8819147729929493,
-    "Random Forest": 0.8245494098139516,
+    "Decision Tree": 0.8046874559436125,
+    "XGBoost": 0.8761952152953976,
+    "Random Forest": 0.8244754582972419,
     "SVM": 0.7469166174293612,
-    "Logistic Regression": 0.7173938756868483
+    "Logistic Regression": 0.6957211340768126
   },
   "advantages": [
     "State-of-the-art gradient boosting performance",

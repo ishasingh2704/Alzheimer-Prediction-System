@@ -8,11 +8,11 @@ After comprehensive evaluation of 5 machine learning models for Alzheimer's dise
 
 | Model | ROC-AUC | F1-Score | Accuracy | Precision | Recall | CV Score | Pred Time (ms) |
 |-------|---------|----------|----------|-----------|--------|----------|----------------|
-| Decision Tree | 0.9119 | 0.8711 | 0.8801 | 0.9389 | 0.8125 | 0.9254±0.0104 | 6.89 |
-| XGBoost | 0.9528 | 0.9118 | 0.9137 | 0.9300 | 0.8942 | 0.9665±0.0056 | 21.65 |
-| Random Forest | 0.9568 | 0.9177 | 0.9209 | 0.9534 | 0.8846 | 0.9610±0.0065 | 76.96 |
-| SVM | 0.9209 | 0.8632 | 0.8609 | 0.8472 | 0.8798 | 0.9204±0.0082 | 101.43 |
-| Logistic Regression | 0.8683 | 0.8055 | 0.7962 | 0.7686 | 0.8462 | 0.8827±0.0171 | 8.28 |
+| Decision Tree | 0.9119 | 0.8711 | 0.8801 | 0.9389 | 0.8125 | 0.9254±0.0104 | 29.22 |
+| XGBoost | 0.9528 | 0.9118 | 0.9137 | 0.9300 | 0.8942 | 0.9665±0.0056 | 25.98 |
+| Random Forest | 0.9568 | 0.9177 | 0.9209 | 0.9534 | 0.8846 | 0.9610±0.0065 | 72.92 |
+| SVM | 0.9209 | 0.8632 | 0.8609 | 0.8472 | 0.8798 | 0.9204±0.0082 | 96.01 |
+| Logistic Regression | 0.8683 | 0.8055 | 0.7962 | 0.7686 | 0.8462 | 0.8827±0.0171 | 28.65 |
 
 
 ## Selection Rationale
@@ -25,11 +25,11 @@ After comprehensive evaluation of 5 machine learning models for Alzheimer's dise
 - **Precision (10%)**: Critical for medical false positive control
 
 ### Final Scores
-- **XGBoost**: 0.8819
-- **Decision Tree**: 0.8283
+- **XGBoost**: 0.8762
 - **Random Forest**: 0.8245
+- **Decision Tree**: 0.8047
 - **SVM**: 0.7469
-- **Logistic Regression**: 0.7174
+- **Logistic Regression**: 0.6957
 
 
 ## Selected Model: XGBoost
@@ -38,7 +38,7 @@ After comprehensive evaluation of 5 machine learning models for Alzheimer's dise
 - **ROC-AUC**: 0.9528
 - **F1-Score**: 0.9118
 - **Cross-Validation**: 0.9665 ± 0.0056
-- **Prediction Time**: 21.65 ms
+- **Prediction Time**: 25.98 ms
 
 ### Key Advantages
 - State-of-the-art gradient boosting performance
